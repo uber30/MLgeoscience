@@ -486,15 +486,15 @@ to those introduced for the GRU block, but at the same time introduces a number 
 
 $$
 \begin{aligned}
-&\boldsymbol{\Gamma}_{u}=\sigma\left(\boldsymbol{W}_{u}\left[\begin{array}{c}
-\boldsymbol{h}^{<t-1>} \\
+&\boldsymbol{\Gamma}_{u}=\sigma\left(\boldsymbol{W}_{u}\left[\begin{array}{c}     \text{Update Gate}
+\boldsymbol{h}^{<t-1>} \\ 
 \boldsymbol{x}^{<t>}
 \end{array}\right]+\boldsymbol{b}_{u}\right) \\
-&\boldsymbol{\Gamma}_{\boldsymbol{f}}=\sigma\left(\boldsymbol{W}_{f}\left[\begin{array}{c}
+&\boldsymbol{\Gamma}_{\boldsymbol{f}}=\sigma\left(\boldsymbol{W}_{f}\left[\begin{array}{c}        \text{Forget Gate}
 h^{<t-1>} \\
 x^{<t>}
 \end{array}\right]+\boldsymbol{b}_{f}\right) \\
-&\boldsymbol{\Gamma}_{o}=\sigma\left(\boldsymbol{W}_{o}\left[\begin{array}{c}
+&\boldsymbol{\Gamma}_{o}=\sigma\left(\boldsymbol{W}_{o}\left[\begin{array}{c}     \text{Output Gate}
 \boldsymbol{h}^{<t-1>} \\
 \boldsymbol{x}^{<t>}
 \end{array}\right]+\boldsymbol{b}_{o}\right) \\
